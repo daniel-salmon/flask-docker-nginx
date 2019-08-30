@@ -67,9 +67,9 @@ Our uWSGI configuration file, `uwsgi.ini` has a `module` key like
 module = wsgi:app
 ```
 
-which indicates what file it needs to run (`wsgi`, with the extension ommitted)
-and the name of the object that's callable (`app`, the name of the Flask object
-initialized when we import the `app` module).
+which indicates what file it needs to run (`wsgi`, with the `.py` extension
+ommitted) and the name of the object that's callable (`app`, the name of the
+Flask object initialized when we import the `app` module).
 
 `uwsgi.ini` also indicates that we want to be talking to Nginx over a Unix
 socket located at `/tmp/uwsgi.sock`. We've [set its privileges to
@@ -98,6 +98,6 @@ in particular:
 ```
 
 Finally, in the `docker-compose.yml` file we've ensured that both the Flask app
-and the Nginx server are able to access the same Unix socket by declaring a
-volume called `app-volume` and listing it as one of the volumes for each
-service.
+and the Nginx server are able to access the _same_ Unix socket
+`/tmp/uwsgi.sock` by declaring a volume called `app-volume` and mounting it in
+the same place for both services.
