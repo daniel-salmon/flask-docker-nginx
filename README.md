@@ -100,4 +100,4 @@ in particular:
 Finally, in the `docker-compose.yml` file we've ensured that both the Flask app
 and the Nginx server are able to access the _same_ Unix socket
 `/tmp/uwsgi.sock` by declaring a volume called `app-volume` and mounting it in
-the same place for both services.
+the same place (`/tmp`) for both services.
