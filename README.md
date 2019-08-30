@@ -18,7 +18,7 @@ following the (brief) [Usage](#usage) section will provide a working example.
 We use Docker to run an [Nginx](https://hub.docker.com/_/nginx) reverse proxy
 server. You might want to run your app behind something like Nginx (or
 Gunicorn) for production deployments since such servers are more secure and are
-optimized for a variety of volume and workloads.
+optimized for high-traffic volumes and a variety of workloads.
 
 ## Usage <a name="usage"></a>
 
