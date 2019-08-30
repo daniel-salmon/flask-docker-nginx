@@ -10,8 +10,8 @@ Let's you run a Flask app factory behind an Nginx server using Docker.
 
 ## About <a name="about"></a>
 
-It was difficult to find a complete Flask tutorial with a _minimal_ working
-example of running an app using Nginx that actually worked. If you have Docker
+It was difficult to find a complete Flask tutorial with a _minimal working
+example_ of running an app using Nginx. If you have Docker
 and Docker Compose installed on your machine, cloning this repository and
 following the (brief) [Usage](#usage) section will provide a working example.
 
