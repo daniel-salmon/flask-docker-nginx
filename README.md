@@ -72,7 +72,7 @@ and the name of the object that's callable (`app`, the name of the Flask object
 initialized when we import the `app` module).
 
 `uwsgi.ini` also indicates that we want to be talking to Nginx over a Unix
-socket located at `/tmp/uwsgi.sock`. We've [set it's privileges to
+socket located at `/tmp/uwsgi.sock`. We've [set its privileges to
 666](https://www.youtube.com/watch?v=AGHmr1NyBTw&feature=youtu.be&t=139) with
 
 ```
