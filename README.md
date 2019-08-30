@@ -10,14 +10,15 @@ Let's you run a Flask app factory behind an Nginx server using Docker.
 
 ## About <a name="about"></a>
 
-It was difficult to find a Flask tutorial with a basic example of running the
-app using Nginx. It's important to note that the implementation here uses an
-app factory with a `create_app()` method in the `app` module to produce an
-object callable by `uwsgi`; this fits better with patterns used to develop
-larger projects and conforms to Flask best practices. The [Details](#details)
-section offers more information about this construction.
+It was difficult to find a complete Flask tutorial with a _minimal_ working
+example of running an app using Nginx that actually worked. If you have Docker
+and Docker Compose installed on your machine, cloning this repository and
+following the (brief) [Usage](#usage) section will provide a working example.
 
-We use Docker to run an [Nginx](https://hub.docker.com/_/nginx) reverse proxy server. One might want to run their app behind something like Nginx (or Gunicorn) for production deployments. Such servers are optimized for a variety of workloads and are more secure.
+We use Docker to run an [Nginx](https://hub.docker.com/_/nginx) reverse proxy
+server. You might want to run your app behind something like Nginx (or
+Gunicorn) for production deployments since such servers are more secure and are
+optimized for a variety of volume and workloads.
 
 ## Usage <a name="usage"></a>
 
@@ -27,7 +28,8 @@ For a first run:
 $ docker-compose up --build
 ```
 
-On subsequent runs, the `--build` flag can be omitted.
+On subsequent runs, the `--build` flag can be omitted; providing it builds the
+image dictated by `Dockerfile`.
 
 ## Details <a name="details"></a>
 
