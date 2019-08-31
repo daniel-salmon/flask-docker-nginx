@@ -1,6 +1,6 @@
 # flask-docker-nginx
 
-Let's you run a Flask app factory behind an Nginx server using Docker.
+Lets you run a Flask app factory behind an Nginx server using Docker.
 
 # Table of Contents
 
